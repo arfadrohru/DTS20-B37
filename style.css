@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 1114px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1114px;
+    margin: auto;
+}
+
+/* navbar */
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    justify-content: center;
+    text-decoration: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar .fa-bars {
+    display: none;
+}
+
+.navbar .logo {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar .logo span {
+    color: red;
+}
+
+/* navbar */
+/* home-section */
+.home {
+    min-height: 100vh;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+
+.motto {
+    justify-content: center;
+    text-align: center;
+    padding-top: 33%;
+}
+
+.motto h4 {
+    font-size: 60px;
+    color: white;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.motto h4 span {
+    color: red;
+}
+
+.motto h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.motto h1 {
+    padding: 20px 0;
+    color: white;
+    font-size: 60px;
+}
+
+.motto h1 .web {
+    color: rgb(0, 162, 255);
+}
+
+.motto h1 .game {
+    color: red;
+}
+
+
+
+.motto a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    font-size: 17px;
+}
+
+.motto a:hover {
+    background-color: #161616;
+    color: white;
+}
+
+/* home-section */
+/*Section about */
+.about-us-section {
+    background-color: #161616;
+    color: white;
+    padding: 40px 0;
+}
+
+.about-us {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.quote {
+    background-color: red;
+    color: black;
+}
+
+.about-us h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*Section about */
+
+
+/*Section Team */
+.section-title {
+    color: #161616;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+    padding: 50px 0;
+
+}
+
+.section-title span {
+    border-bottom: 3px solid #161616;
+}
+
+.imagemax {
+    max-width: 50%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.flip-card {
+    justify-content: space-around;
+    padding: 20px;
+    height: 445px;
+    width: 320px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #161611;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+
+.profile {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    padding: 5px;
+    background: #161616;
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tag {
+    color: red;
+}
+
+.about {
+    font-size: 12px;
+    padding: 5px 35px;
+    text-align: justify;
+}
+
+.flip-card-back h1 {
+
+    padding-top: 40px;
+    color: red;
+}
+
+.flip-card-back i {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook-square {
+    color: #4367b2;
+}
+
+.fa-twitter-square {
+    color: #38a1f3;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-youtube-square {
+    color: #eb1c14;
+}
+
+.fa-github-square {
+    color: #8A7B77;
+}
+
+/*Section Team*/
+/*section Projects*/
+.imagemax-project {
+    width: auto;
+    max-height: 320px;
+    background-size: contain;
+    padding: 10px 20px;
+}
+
+
+
+.our-project h1 {
+    padding: 40px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.our-project {
+    margin: 40px 0;
+    background-color: #161616;
+}
+
+.game-dev h1,
+.web-dev h1 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.game-dev,
+.web-dev {
+    display: flex;
+    align-items: center;
+}
+
+.web-dev img,
+.web-dev h1,
+.game-dev img,
+.game-dev h1 {
+    flex: 33.3%
+}
+
+.web-dev img:hover,
+.game-dev img:hover {
+    opacity: 0.7;
+
+}
+
+.box-project {
+    padding-bottom: 40px;
+}
+
+/*section Projects*/
+.quotemalam {
+    padding: 40px;
+}
+
+/*Footer*/
+footer {
+    margin-top: 40px;
+    background-color: #161616;
+}
+
+footer h1 {
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.malam {
+    color: red;
+}
+
+.contact {
+    padding: 20px 0;
+}
+
+.footnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footnav ul li {
+    list-style: none;
+}
+
+.footnav ul li a,
+.footnav p {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.web {
+    color: #38a1f3;
+}
+
+.game {
+    color: red;
+}
+
+.socmed {
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 20px;
+}
+
+.socmed i {
+    padding: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+footer h6 {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Footer*/
+
+
+@media (max-width:1024px) {
+
+    .game-dev h1,
+    .web-dev h1 {
+        display: none;
+    }
+
+    .imagemax-project {
+        max-height: 275px;
+        width: auto;
+    }
+}
+
+@media (max-width:640px) {
+
+    .game-dev,
+    .web-dev {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        justify-content: space-around;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 2px;
+    }
+
+
+    .navbar .fa-bars {
+        display: block;
+        color: white;
+        font-size: 24px;
+    }
+
+}
